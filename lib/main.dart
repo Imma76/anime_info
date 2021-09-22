@@ -1,10 +1,10 @@
+import 'package:anime_info/second_home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
-import 'home_page.dart';
-
 void main() {
-  runApp(MyApp());
+  runApp(ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(Duration(milliseconds: 2000), () {
       Navigator.push(context, MaterialPageRoute(builder: (context) {
-        return HomePage();
+        return SecondHomePage();
       }));
     });
   }
