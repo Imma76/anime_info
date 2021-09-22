@@ -1,11 +1,11 @@
 # anime_info
 
-A new Flutter project.
+An app that helps you search for information about any anime
 
 ## Getting Started
 
 This project is a starting point for anime_info application.
-anime_info is an app that helps you search for information about your favourite anime.
+anime_info is an app that helps you search for information about your favourite anime and uses riverpod for state management.
 
 A few resources to get you started if this is your first Flutter project:
 
